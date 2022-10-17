@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="ClickIT">Button</button>
+    <p id="hoverover">Hover over This</p>
+    <b id="effect"></b>
+</body>
+<script>
+    const x=document.getElementById("ClickIT");
+    const y=document.getElementById("hoverover");
+
+    // x.addEventListener("click",function(){
+    //     document.getElementById("effect").innerHTML+="click event1"+"<br>";
+    // })
+
+
+    // y.addEventListener("mouseout",respondmouseout)
+    // {
+    //     function respondmouseout(){
+    //         document.getElementById("effect").innerHTML+="click event2"+"<br>";
+    
+    //     }
+    // }
+
+    // function alert()
+    // {
+    //     document.getElementById("effect").innerHTML+="click event1"+"<br>";
+    // }
+
+    // x.addEventListener("click",alert);
+    // y.addEventListener("click",alert);
+
+    x.addEventListener("click",()=>{
+        alert("clicked")
+    })
+     
+    // x.onclick=()=>{
+    //     alert("Clicked");
+    // }
+</script>
+</html>

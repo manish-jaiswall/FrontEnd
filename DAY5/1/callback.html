@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //   Syntax
+        //   function abc(call){
+        //     call()
+        //   }
+
+
+        // a. 
+        // console.log("start");
+        // console.log("proessing");
+        // setTimeout(()=>{
+        //     alert("middle");
+        // },5000)
+    
+        // console.log("end");
+
+        // b. 
+        // console.log("start");
+        // console.log("proessing");
+        // function sample()
+        // {
+        //     alert("middle");
+        // }
+        // setTimeout(sample,5000);
+        // console.log("end");
+
+        // c. 
+        
+        // function one(){
+        //     console.log("function one");
+        // }
+
+        // function two()
+        // {
+        //     console.log("function two");
+        // }
+        // function three()
+        // {
+        //     console.log("function three");
+        // }
+        // setTimeout(one,2000);
+
+        // or
+
+        // function one(){
+        //     setTimeout(function(){
+        //     console.log("function one");
+        // },3000)
+        // }
+        // two();
+        // three();
+
+
+
+
+        // 10-a 
+        // function person1(friend){
+        //     console.log("my friend is "+friend);
+        // }
+        // function person2(){
+        //     console.log("my friend is Ram");
+        // }
+
+        // person1("manish");
+        // person2();
+        
+
+        // OR 
+       
+        // 10-b 
+        // function person1(friend,person2){
+        //     console.log("my friend is "+friend);
+        //     person2();
+        // }
+        // function person2(){
+        //     console.log("my friend is Ram");
+        // }
+         
+        // person1("manish",person2)
+        // or 
+
+        
+        //  10-c 
+        function person1(friend,ijljds){
+            console.log("my friend is "+friend);
+            ijljds();
+        }
+        function person2(){
+            console.log("my friend is Ram");
+        }
+
+        person1("manish",person2);
+        
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+.container{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: minmax(200px,auto);
+        grid-gap: 1em;
+    }
+.b1{
+    grid-column: 1/4;
+    background-color: yellow;
+    text-align: center;
+    
+
+}
+.b2{
+    
+    grid-column: 4/5;
+    background-color: red;
+    text-align: center;
+}
+.b3{
+    grid-row:2/4;
+    grid-column: 1/2;
+    background-color: blue;
+    text-align: center;
+}
+.b4{
+    grid-row:2/3;
+    grid-column: 2/4;
+    background-color: rgb(255, 98, 0);
+    text-align: center;
+}
+.b5{
+    grid-row:3/4;
+    grid-column:2/4;
+    background-color: rgb(254, 0, 221);
+    text-align: center;
+}
+.b6{
+    grid-row:2/4;
+    grid-column: 4/5;
+    background-color: rgb(0, 255, 68);
+    text-align: center;
+}
+</style>
+<body>
+    
+</body>
+   
+    <div class="container">
+       <div class="b1">Box1</div>
+       <div class="b2">Box2</div>
+       <div class="b3">Box3</div>
+       <div class="b4">Box4</div>
+       <div class="b5">Box5</div>
+       <div class="b6">Box6</div>
+    </div>
+</html>

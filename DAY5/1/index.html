@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        document.write("<h3> Object Literal</h3>");
+        var student={id:1,name:"john",class:8}
+        document.write("Student id ="+ student.id+"<br> Student name = "+student.name+"<br> class ="+student.class)
+    </script> -->
+
+    <!-- <script>
+        document.write("<h3> Object new Keyword</h3>");
+       var student=new Object();
+       student.id=100;
+       student.name="Manish";
+       student.class=10;
+       document.write("Student id ="+ student.id+"<br> Student name = "+student.name+"<br> class ="+student.class)
+
+
+    </script> -->
+    
+
+    <!-- <script>
+        document.write("<h3> Object new Constructor</h3>");
+        function student(id,name,branch)
+        {
+            this.id=id;
+            this.name=name;
+            this.branch=branch;
+        }
+
+        student1=new student(100,"john",10);
+        document.write("Student id ="+ student1.id)
+
+    </script> -->
+
+    <!-- <script>
+        class student{
+            setDetails(){
+                this.sid=101;
+                this.sname="Manish";
+                this.clas=10;
+            }
+            display()
+            {
+                console.log(this.sid,this.sname,this.clas);
+            }
+
+            
+
+        }
+        let st=new student();
+        st.setDetails();
+        st.display();
+    </script>
+
+    <script>
+        class Person{
+            constructor(id,name,clas)
+            {
+                 this.name=name;
+                 this.id=id;
+                 this.clas=clas
+            }
+            getdetails()
+            {
+                return(`the name is ${this.name}`);
+            }
+        }
+
+        let p1=new Person(10,"manishh",10);
+        console.log(p1.name);
+        console.log(p1.getdetails());
+    </script> -->
+
+    <!-- <script>
+        class Person{
+            constructor(name,id){
+            this.name=name;
+            this.id=id;}
+        
+        add_address(add)
+        {
+            this.add=add;
+        }
+        getdetails()
+            {
+                return(`the name is ${this.name} and Address is ${this.add}`);
+            }
+    }
+
+    let p1=new Person(10,"manishh");
+       p1.add_address("nepal")
+        console.log(p1.getdetails());
+    </script> -->
+
+    
+
+    <!-- encapsulation -->
+    <!-- <script>
+        function person(fname,lname){
+            let firstname=fname;
+            let lastname=lname;
+
+            let getDetail_noaccess=function(){
+                return(`the first name is ${firstname} and last name is ${lastname}`);
+            }
+            this.getDetail_access=function(){
+                return(`the first name is ${firstname} and last name is ${lastname}`);
+            }
+        }
+
+        let p1=new person("ram","das");
+        console.log(p1.getDetail_noaccess); // no access as block due to let
+         console.log(p1.getDetail_access()); // access allowed
+
+    </script> -->
+
+     
+    <!-- inheritance -->
+    <script>
+        class person{
+            constructor(name)
+            {
+                this.name=name;
+            }
+
+            tostring()
+            {
+                return (`the name of the person is ${this.name}`);
+            }
+        }
+
+            class student extends person{
+                constructor(name,id){
+                    super(name); // super keyword access from the parent class ,here name is inherited from parent class
+                    this.id=id;
+                }
+
+                tostring()
+                {
+                    return(`${super.tostring()},student id=${this.id}`)
+                }
+            }
+
+            let st1=new student("manish",10);
+            console.log(st1.tostring());     
+    </script>
+
+</body>
+</html>

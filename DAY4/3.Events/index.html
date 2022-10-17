@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- When an event occur you can create an event handler which is a piece of code that will execute to respond to that event  -->
+      <!-- It listens to the events and respond accordingly to events fire-->
+      <!-- Event handlers are responsible for dealing with events  -->
+        
+      <!-- Event can be handled in two method: event handler and event listner -->
+
+      <input type="button" value="click" name="" id="btn">
+      <script>
+        document.getElementById("btn").onmouseover=changecolormouseover;
+        document.getElementById("btn").onmouseout=changecolormouseout;
+
+        function changecolormouseover()
+        {
+            this.style.background="red";
+            this.style.color="yellow";
+            
+        }
+        function changecolormouseout()
+        {
+            this.style.background="black";
+            this.style.color="white";
+            
+        }
+
+
+
+      </script>
+
+</body>
+</html>

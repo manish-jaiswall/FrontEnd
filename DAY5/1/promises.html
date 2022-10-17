@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- pending
+    fulfilled
+    reject -->
+
+
+    <!-- res(resolve)/rej(reject)  -->
+
+    <!-- res/rej   
+        then(callback=res) and catch(callback=rej) -->
+
+        <!-- let some_action= new Promise(function(resolve, reject){
+            perform some work
+        }) -->
+
+        <!-- <p id="demo"></p>
+        <script>
+            let car = new Promise(function(resolve, reject){
+                fuel_fulltank=true;
+                if(fuel_fulltank)
+                   resolve()
+                else
+                   reject()
+            })
+             car.then(function(){
+                document.write("tank full");
+             })
+             .catch(function(){
+                document.write("tank not full");
+             })
+
+        </script> -->
+         
+         <!-- <script>
+            let empty_tank=new function() {
+                return new Promise(function(resolve,reject){
+                    resolve("the car doesnot have fuel")
+                })
+
+            }  
+
+            let engine =function(){
+                return new Promise(function(resolve, reject){
+                    resolve("The engine is overheated");
+                })
+            }
+
+            let travel =function(){
+                return new Promise(function(resolve, reject){
+                    resolve("The car is not safe to travel ");
+                })
+            }
+
+            empty_tank.then(function(){
+                return engine();
+            }).then(function(){
+                return travel();
+            }).then(function(){
+                console.log("Done")
+            }) -->
+        <!-- </script>  -->
+
+
+            <!-- <script>
+                let empty_tank=new function(msg) {
+                    return new Promise(function(resolve,reject){
+                        resolve("the car doesnot have fuel")
+                    })
+    
+                }  
+    
+                let engine =function(){
+                    return new Promise(function(resolve, reject){
+                        resolve("The engine is overheated");
+                    })
+                }
+    
+                let travel =function(msg){
+                    return new Promise(function(resolve, reject){
+                        resolve(msg+"The car is not safe to travel ");
+                    })
+                }
+    
+                empty_tank.then(function(result){
+                    return engine(result);
+                }).then(function(result){
+                    return travel(result);
+                }).then(function(result){
+                    console.log("Done"+result)
+                })
+
+            
+            </script> -->
+
+
+            <!-- <script>
+                let p=new Promise((resolve,reject)=>{
+
+                    let add=1+1;
+                    if(add=2)
+                     resolve("success")
+                     else
+                     reject("failed");
+                })
+
+                p.then((message)=>{
+                    console.log("this is resolved"+message); 
+                }).catch((message)=>{
+                    console.log("this is rejected"+message)
+                })
+            </script> -->
+
+
+            <!-- which is faster?? resolve or reject=> resolve is faster -->
+            <script>
+                let p1=new Promise((res,rej)=>{
+                    res("valid")
+                })
+                let p2=new Promise((res,rej)=>{
+                    res("valid")
+                })
+                let p3=new Promise((res,rej)=>{
+                    res(20)
+                })
+
+                Promise.all([p1,p2,p3]).then((data)=>{
+                    console.log(data);
+                }).catch((err)=>{
+                    console.log(err);
+                })
+
+                p1.then((data)=>{
+                    console.log(data);
+                }).catch((err)=>{
+                    console.log(err);
+                })
+                p2.then((data)=>{
+                    console.log(data);
+                }).catch((err)=>{
+                    console.log(err);
+                })
+                p3.then((data)=>{
+                    console.log(data);
+                }).catch((err)=>{
+                    console.log(err);
+                })
+
+            </script>
+</body>
+</html>

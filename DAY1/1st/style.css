@@ -1,0 +1,25 @@
+body{
+
+    text-align:center;
+}
+
+#html
+{
+    font-size: 50px;
+}
+.h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.c1{
+    font-size: 50 px;
+}
+.c2
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.c3
+{
+    color:blueviolet;
+}

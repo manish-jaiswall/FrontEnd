@@ -1,0 +1,85 @@
+/* selector
+{
+    property:value;
+} */
+
+/* slector  
+universal
+class
+id
+element
+*/
+
+/* Universal  */
+/* *{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} */
+
+/* class  */
+/* .cl{
+    color:red;
+} */
+/* Element  */
+
+/* p{
+    color:green;
+} */
+/* id  */
+
+/* #i1{
+    color:brown;
+} */
+
+/* Advance Selector  */
+
+/* 1. Descendant
+2.Child
+3.Adjacent
+4.Sibling
+5.pseudo */
+
+/*1. Descendant
+ li a{
+    color: red;
+}
+ 
+li li a{
+    color: red;
+} */
+ 
+/* .container ol{
+    border: 5px solid blue;
+} */
+ 
+ 
+ 
+/* 2.Child
+ 
+body>p{
+    color: red;
+}
+ 
+.container>ol{
+    border: 5px solid blue;
+}
+*/
+ 
+ 
+/* 3.Adjacent  */
+ 
+ /* ol+p+p{
+    color: red;
+ } */
+ 
+ 
+/* 4. Sibling */
+/* ol~p{
+    color: red;
+} */
+ 
+/* 5.pseduo */
+/* a:hover{
+    text-decoration: none;
+    color: red;
+ 
+} */
