@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ListUsersComponent } from './list-users/list-users.component';
 
-
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 @NgModule({
@@ -12,7 +12,8 @@ import { ListUsersComponent } from './list-users/list-users.component';
     ListUsersComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatBadgeModule
   ],
   exports:[
     ListUsersComponent

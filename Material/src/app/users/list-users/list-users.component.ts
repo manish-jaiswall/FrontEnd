@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListUsersComponent implements OnInit {
 
+  hidden = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
   }
 
 }
